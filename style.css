@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #212335;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/* Landing Section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  height: 70px;
+  background-color: #212335;
+}
+.head_name h2 {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #f64a57;
+}
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_text {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: 200;
+}
+.nav_text li {
+  list-style-type: none;
+  margin-left: 25px;
+}
+.nav_text a {
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #f64a57;
+}
+.landing {
+  background-color: #23273a;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.landing_main {
+  margin-top: -40px;
+  width: 100%;
+  height: 100%;
+}
+.left_landing {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+}
+.left_landing_box {
+  margin-top: -15px;
+}
+.left_landing_box h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 70px;
+}
+.left_landing_box p {
+  color: #60648b;
+  font-size: 20px;
+  padding-right: 260px;
+  margin-bottom: 20px;
+}
+button {
+  background-color: #f64a57;
+  width: 25%;
+  height: 20%;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: -30px;
+  max-width: 200px;
+  max-height: 90px;
+  transition: transform 0.5s;
+}
+button:hover {
+  transform: translateX(-40px) translateY(-35px);
+}
+.button_affect {
+  border: 2px dashed #f64a57;
+  width: 23%;
+  height: 17%;
+  max-width: 196px;
+  max-height: 86px;
+}
+.right_landing {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right_landing_image {
+  background-image: url('images/Hisham.jpg');
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  border-radius: 4px;
+}
+/* About Section */
+
+.about {
+  background-color: #23273a;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about_text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.about_text h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.about_text h3 {
+  color: #60648b;
+}
+.about_text p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #60648b;
+}
+/* Skills Section */
+.skills {
+  background-color: #23273a;
+  height: 170vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills_box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+  height: 90%;
+}
+.skills_title {
+  width: 40%;
+  margin-bottom: 25px;
+}
+.skills_title h1 {
+  font-size: 65px;
+  font-family: sans-serif;
+  color: #f64a57;
+}
+.skills_title_underline {
+  width: 20%;
+  max-width: 170px;
+  height: 5px;
+  background-color: #f64a57;
+}
+.skills_cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+    max-width: 1100px;
+    max-height: 1000px;
+}
+.skcard {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(43,45,65);
+  aspect-ratio: 1;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 25px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.skcard img {
+  width: 15%;
+}
+/* Lottie */
+/* Change marings to top, left, and right */
+#lottie1 {
+  position: relative;
+  margin-left: 680px;
+  margin-bottom: -80px;
+}
+#lottie2 {
+  position: relative;
+  margin-right: 680px;
+  margin-bottom: -90px;
+}
